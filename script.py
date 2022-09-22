@@ -16,7 +16,6 @@ try:
     element = wait.until(EC.visibility_of_element_located(By.CLASS_NAME, "raw-html"))
 
     html_page = wd.page_source
-    wd.quit()
 
     page = soup(html_page,'html.parser')
 
